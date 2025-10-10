@@ -5,8 +5,8 @@ export default function Home() {
     <main className="bg-gray-100 min-h-screen">
       <header className="bg-white py-4">
         <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold text-gray-800">СтальДрайв</h1>
-          <p className="text-gray-600 italic">Надёжные решения для прочного будущего</p>
+          <h1 className="text-2xl font-bold text-gray-800">ТОРГОВЫЙ ДОМ СТРОИТЕЛЬНЫЙ ЦЕНТР</h1>
+          <p className="text-gray-600 italic">Быстрые и выгодные закупки под ключ</p>
         </div>
       </header>
 
@@ -200,8 +200,8 @@ export default function Home() {
             {/* Отзыв 1 */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <p className="text-gray-700 italic mb-4">
-                "Отличный сервис и быстрая доставка! Заказывали арматуру для фундамента,
-                все привезли вовремя и качество на высоте. Рекомендуем!"
+                Отличный сервис и быстрая доставка! Заказывали арматуру для фундамента,
+                все привезли вовремя и качество на высоте. Рекомендуем!
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
@@ -209,7 +209,7 @@ export default function Home() {
                 </div>
                 <div className="">
                   <h4 className="text-lg font-semibold text-gray-800">Кирилл Иванов</h4>
-                  <p className="text-gray-500 text-sm">ООО "СтройИнвест"</p>
+                  <p className="text-gray-500 text-sm">ООО СтройИнвест</p>
                 </div>
               </div>
             </div>
@@ -217,9 +217,9 @@ export default function Home() {
             {/* Отзыв 2 */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <p className="text-gray-700 italic mb-4">
-                "Работаем с компанией СтальДрайв уже не первый год. Всегда широкий
+                Работаем с компанией СтальДрайв уже не первый год. Всегда широкий
                 выбор металлопроката и адекватные цены. Менеджеры оперативно
-                консультируют и помогают с выбором."
+                консультируют и помогают с выбором.
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
@@ -227,7 +227,7 @@ export default function Home() {
                 </div>
                 <div className="">
                   <h4 className="text-lg font-semibold text-gray-800">Анна Смирнова</h4>
-                  <p className="text-gray-500 text-sm">ИП "МеталлСервис"</p>
+                  <p className="text-gray-500 text-sm">ИП МеталлСервис</p>
                 </div>
               </div>
             </div>
