@@ -608,7 +608,7 @@ export default function Home() {
                 📞 Телефон (только звонки): <a href="tel:+79685281206" className="text-orange-500 font-bold hover:underline">+7 (968) 528-12-06</a>
               </p>
               <p className="text-gray-600 text-lg">
-                💬 WhatsApp: <a href="tel:+79685281206" className="text-orange-500 font-bold hover:underline">+7 (968) 528-12-06</a>
+                💬 WhatsApp: <a href="tel:+79500265208" className="text-orange-500 font-bold hover:underline">+7 (950) 026-52-08</a>
               </p>
               <p className="text-gray-600 text-lg">
                 ✉️ Email: <a href="mailto:info@steeldrive.ru" className="text-orange-500 font-bold hover:underline">infosales@td-sts.bizml.ru</a>
