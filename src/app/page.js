@@ -656,8 +656,8 @@ export default function Home() {
                   />
                   <div className="text-left">
                     <p className="text-gray-700 text-base font-medium">Email для заявок:</p>
-                    <a href="mailto:infosales@td-sts.bizml.ru" className="text-xl text-orange-500 font-bold hover:underline">
-                      infosales@td-sts.bizml.ru
+                    <a href="mailto:dgumarket@тдсц.рф" className="text-xl text-orange-500 font-bold hover:underline">
+                      dgumarket@тдсц.рф
                     </a>
                   </div>
                 </div>
