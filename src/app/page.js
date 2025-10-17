@@ -38,7 +38,7 @@ export default function Home() {
     <main className="bg-gray-100 min-h-screen">
       
       {/* 1. HEADER / НАВИГАЦИЯ */}
-      <header className="bg-white py-4 shadow-md">
+      <header className="bg-white py-4 shadow-md fixed top-0 left-0 w-full z-10">
         <div className="container mx-auto px-4 flex justify-between items-center">
           
           {/* БЛОК ЛОГОТИПА И НАЗВАНИЯ */}
@@ -62,14 +62,14 @@ export default function Home() {
           </div>
           
           {/* КОНТАКТНЫЙ ТЕЛЕФОН */}
-          <a href="tel:+79685281206" className="text-3xl font-bold text-orange-500 hover:text-orange-700 hidden sm:block">
+          <a href="tel:+79685281206" className="text-2xl font-bold text-orange-500 hover:text-orange-700 hidden sm:block">
             +7 (968) 528-12-06
           </a>
         </div>
       </header>
 
       {/* 2. ПЕРВЫЙ ЭКРАН (HERO) */}
-      <section className="py-20 bg-gray-100">
+      <section className="pt-32 pb-20 bg-gray-100">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div className="md:order-2">
             {/* Изображение, демонстрирующее решение проблемы / процесс снабжения */}
@@ -198,54 +198,58 @@ export default function Home() {
       </section>
 
       {/* 6. АССОРТИМЕНТ ПРОДУКЦИИ (ЧТО МЫ ПОСТАВЛЯЕМ) */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-12 bg-gray-100">
         <div className="container mx-auto px-4">
-            
-            <div className="text-center mb-12">
-                <h2 className="text-4xl font-extrabold text-gray-800 mb-3">
-                    Полный спектр материалов для вашего проекта
-                </h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Мы поставляем не только металлопрокат, но и все сопутствующие строительные и инженерные материалы.
-                </p>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                {[
-                    { title: "Черный металлопрокат", icon: "металлическая балка" },
-                    { title: "Трубопроводная и запорная арматура", icon: "кран/вентиль" },
-                    { title: "Цветной металлопрокат", icon: "слиток" },
-                    { title: "Нержавеющий металлопрокат", icon: "лист стали" },
-                    { title: "Оцинкованный металлопрокат", icon: "лист с покрытием" },
-                    { title: "Кровельные материалы", icon: "крыша" },
-                    { title: "Крепеж (болты, шурупы, хомуты)", icon: "гайка" },
-                    { title: "Кирпич, блоки, ЖБИ (бетон, газобетон)", icon: "кирпич" },
-                    { title: "Пиломатериалы (доски, брус)", icon: "кирпич" },
-                    { title: "Сыпучие материалы (песок, щебень, гравий)", icon: "кирпич" },
-                    { title: "Инженерные системы", icon: "труба" }
-                ].map((item, index) => (
-                    <div 
-                        key={index} 
-                        className="
-                            bg-white p-6 rounded-xl shadow-lg 
-                            border-b-4 border-transparent hover:border-orange-500 
-                            transform hover:scale-[1.02] transition duration-300 ease-in-out
-                        "
-                    >
-                        <div className="mb-3 text-orange-500">
-                            {/* Здесь должна быть SVG-иконка, например, icon: 'металлическая балка' */}
-                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                            </svg>
-                        </div>
-                        
-                        <p className="text-gray-800 font-semibold leading-snug">{item.title}</p>
-                        <span className="text-xs text-gray-500 mt-1 block">Категория материалов</span>
+          
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-3">
+                Полный спектр материалов для вашего проекта
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Мы поставляем не только металлопрокат, но и все сопутствующие строительные и инженерные материалы.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {[
+                { title: "Черный металлопрокат", file: "cherniy_metall.png" },
+                { title: "Трубопроводная и запорная арматура", file: "zapornaya_armatura.png" },
+                { title: "Цветной металлопрокат", file: "cvetnoy_metall.png" },
+                { title: "Нержавеющий металлопрокат", file: "nerjaveika.png" },
+                { title: "Оцинкованный металлопрокат", file: "ocinkovka.png" },
+                { title: "Кровельные материалы", file: "krovlya.png" },
+                { title: "Крепеж (болты, шурупы, хомуты)", file: "krepezh.png" },
+                { title: "Кирпич, блоки, ЖБИ (бетон, газобетон)", file: "kirpich_bloki.png" },
+                { title: "Пиломатериалы (доски, брус)", file: "pilomaterialy.png" },
+                { title: "Сыпучие материалы (песок, щебень, гравий)", file: "sypuchie.png" },
+                { title: "Инженерные системы", file: "inzheneriya.png" },
+            ].map((item, index) => (
+                <div 
+                    key={index} 
+                    className="
+                        bg-white p-6 rounded-xl shadow-lg text-center
+                        border-b-4 border-transparent hover:border-orange-500 
+                        transform hover:scale-[1.02] transition duration-300 ease-in-out
+                    "
+                >
+                    <div className="flex justify-center mb-3">
+                        <Image
+                            src={`/categories/${item.file}`}
+                            alt={item.title}
+                            width={512}
+                            height={512}
+                            className="w-36 h-36 object-contain rounded-lg"
+                        />
                     </div>
-                ))}
-            </div>
-       </div>
-    </section>
+                    
+                    <p className="text-gray-800 font-semibold leading-snug">{item.title}</p>
+                    <span className="text-xs text-gray-500 mt-1 block">Категория материалов</span>
+                </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
 
       {/* 7. КОМУ БУДЕТ ПОЛЕЗНО (ЦЕЛЕВАЯ АУДИТОРИЯ) */}
       <section className="py-12 bg-white">
@@ -364,7 +368,7 @@ export default function Home() {
             {/* Транспортное средство 1 */}
             <div className="bg-gray-50 rounded-lg p-4 shadow-md flex flex-col items-center text-center border border-gray-200">
               <div className="deliver-img mb-3">
-                <Image src="/delivery/gazel.jpg" alt="Газель" width={256} height={144} className="object-contain" />
+                <Image src="/delivery/gazel.jpg" alt="Газель" width={256} height={144} className="object-contain rounded-lg" />
               </div>
               <p className="font-semibold text-gray-800 mb-2">Газель</p>
               <ul className="list-disc list-inside text-left text-sm text-gray-600 space-y-1">
@@ -376,7 +380,7 @@ export default function Home() {
             {/* Транспортное средство 2 */}
             <div className="bg-gray-50 rounded-lg p-4 shadow-md flex flex-col items-center text-center border border-gray-200">
               <div className="deliver-img mb-3">
-                <Image src="/delivery/auto5t.jpg" alt="Бортовой авто до 5 т" width={256} height={144} className="object-contain" />
+                <Image src="/delivery/auto5t.jpg" alt="Бортовой авто до 5 т" width={256} height={144} className="object-contain rounded-lg" />
               </div>
               <p className="font-semibold text-gray-800 mb-2">Бортовой авто до 5 т</p>
               <ul className="list-disc list-inside text-left text-sm text-gray-600 space-y-1">
@@ -388,7 +392,7 @@ export default function Home() {
             {/* Транспортное средство 3 */}
             <div className="bg-gray-50 rounded-lg p-4 shadow-md flex flex-col items-center text-center border border-gray-200">
               <div className="deliver-img mb-3">
-                <Image src="/delivery/auto10t.jpg" alt="Бортовой авто до 10 т" width={256} height={144} className="object-contain" />
+                <Image src="/delivery/auto10t.jpg" alt="Бортовой авто до 10 т" width={256} height={144} className="object-contain rounded-lg" />
               </div>
               <p className="font-semibold text-gray-800 mb-2">Бортовой авто до 10 т</p>
               <ul className="list-disc list-inside text-left text-sm text-gray-600 space-y-1">
@@ -400,7 +404,7 @@ export default function Home() {
             {/* Транспортное средство 4 */}
             <div className="bg-gray-50 rounded-lg p-4 shadow-md flex flex-col items-center text-center border border-gray-200">
               <div className="deliver-img mb-3">
-                <Image src="/delivery/shalanda.jpg" alt="Шаланда" width={256} height={144} className="object-contain" />
+                <Image src="/delivery/shalanda.jpg" alt="Шаланда" width={256} height={144} className="object-contain rounded-lg" />
               </div>
               <p className="font-semibold text-gray-800 mb-2">Шаланда</p>
               <ul className="list-disc list-inside text-left text-sm text-gray-600 space-y-1">
@@ -412,7 +416,7 @@ export default function Home() {
             {/* Транспортное средство 5 */}
             <div className="bg-gray-50 rounded-lg p-4 shadow-md flex flex-col items-center text-center border border-gray-200">
               <div className="deliver-img mb-3">
-                <Image src="/delivery/crane.jpg" alt="Манипулятор" width={256} height={144} className="object-contain" />
+                <Image src="/delivery/crane.jpg" alt="Манипулятор" width={256} height={144} className="object-contain rounded-lg" />
               </div>
               <p className="font-semibold text-gray-800 mb-2">Автокран</p>
               <ul className="list-disc list-inside text-left text-sm text-gray-600 space-y-1">
@@ -427,7 +431,7 @@ export default function Home() {
 
                 <div>
                     {/* СКОРОСТЬ И МЕТОДЫ ДОСТАВКИ */}
-                    <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">Гибкая логистика и расчет стоимости</h3>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-3">Гибкая логистика и расчет стоимости</h3>
                     <p className="text-gray-700">
                         Окончательная стоимость транспортировки рассчитывается индивидуально, исходя из веса, габаритов вашего груза и удаленности объекта от наших складских комплексов. Мы используем как отечественный, так и зарубежный автотранспорт для маршрутов любой дальности, обеспечивая оптимальные затраты и скорость. Наш автопарк полностью оснащен для работы со стандартными и нестандартными грузами.
                     </p>
@@ -435,15 +439,15 @@ export default function Home() {
 
                 <div>
                     {/* ГАРАНТИИ ПРИ ТРАНСПОРТИРОВКЕ */}
-                    <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">Надежные гарантии при транспортировке</h3>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-3">Надежные гарантии при транспортировке</h3>
                     <p className="text-gray-700">
-                        Мы — специалисты по поставкам металлопроката и крупногабаритных изделий. Гарантируем строгое соблюдение оговоренных сроков. Обслуживаем Санкт-Петербург, Ленинградскую область, а также регионы РФ, работая с любыми объемами. <br/><br/><span className="font-semibold text-orange-600">Благодаря GPS-мониторингу мы полностью контролируем процесс от склада до объекта.</span>
+                        Мы — специалисты по поставкам металлопроката и крупногабаритных изделий. Гарантируем строгое соблюдение оговоренных сроков. Обслуживаем Санкт-Петербург, Ленинградскую область, а также регионы РФ, работая с любыми объемами. <br/><br/><span className="font-semibold text-orange-500">Благодаря GPS-мониторингу мы полностью контролируем процесс от склада до объекта.</span>
                     </p>
                 </div>
 
                 <div>
                     {/* ВЫГОДЫ СОТРУДНИЧЕСТВА */}
-                    <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">Ваши выгоды от работы с нашей логистикой</h3>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-3">Ваши выгоды от работы с нашей логистикой</h3>
                     <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
                         <li>Оформление сопроводительных документов и оперативная комплектация.</li>
                         <li>Транспортные средства оснащены современными системами контроля и навигации.</li>
@@ -597,23 +601,113 @@ export default function Home() {
       <section id="contacts-section" className="py-12 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Контакты
+            Свяжитесь с нами
           </h2>
-          <div className="max-w-md mx-auto">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">
-              Свяжитесь с нами
-            </h3>
-            <div className="space-y-4 text-center">
-              <p className="text-gray-600 text-lg">
-                📞 Телефон (только звонки): <a href="tel:+79685281206" className="text-orange-500 font-bold hover:underline">+7 (968) 528-12-06</a>
-              </p>
-              <p className="text-gray-600 text-lg">
-                💬 WhatsApp: <a href="tel:+79500265208" className="text-orange-500 font-bold hover:underline">+7 (950) 026-52-08</a>
-              </p>
-              <p className="text-gray-600 text-lg">
-                ✉️ Email: <a href="mailto:info@steeldrive.ru" className="text-orange-500 font-bold hover:underline">infosales@td-sts.bizml.ru</a>
-              </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 bg-white p-6 md:p-10 rounded-xl shadow-2xl border-t-4 border-orange-500">
+            
+            {/* КОЛОНКА 1: КОНТАКТНЫЕ ДАННЫЕ (ОСТАВЛЯЕМ БЕЗ ИЗМЕНЕНИЙ) */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Отдел продаж</h3>
+              
+              <div className="space-y-6">
+                {/* ТЕЛЕФОН */}
+                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg">
+                  <Image 
+                    src="/contacts/telephone.png" 
+                    alt="Иконка телефона" 
+                    width={64} 
+                    height={64} 
+                    className="w-8 h-8 flex-shrink-0 mt-1"
+                  />
+                  <div className="text-left">
+                    <p className="text-gray-700 text-base font-medium">Телефон (только звонки):</p>
+                    <a href="tel:+79685281206" className="text-2xl text-orange-500 font-bold hover:underline">
+                      +7 (968) 528-12-06
+                    </a>
+                  </div>
+                </div>
+                
+                {/* WHATSAPP */}
+                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg">
+                  <Image 
+                    src="/contacts/WhatsApp.png" 
+                    alt="Иконка WhatsApp" 
+                    width={64} 
+                    height={64} 
+                    className="w-8 h-8 flex-shrink-0 mt-1" 
+                  />
+                  <div className="text-left">
+                    <p className="text-gray-700 text-base font-medium">WhatsApp:</p>
+                    <a href="https://wa.me/79500265208" target="_blank" rel="noopener noreferrer" className="text-2xl text-orange-500 font-bold hover:underline">
+                      +7 (950) 026-52-08
+                    </a>
+                  </div>
+                </div>
+                
+                {/* EMAIL */}
+                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg">
+                  <Image 
+                    src="/contacts/email.png" 
+                    alt="Иконка Email" 
+                    width={64} 
+                    height={64} 
+                    className="w-8 h-8 flex-shrink-0 mt-1" 
+                  />
+                  <div className="text-left">
+                    <p className="text-gray-700 text-base font-medium">Email для заявок:</p>
+                    <a href="mailto:infosales@td-sts.bizml.ru" className="text-xl text-orange-500 font-bold hover:underline">
+                      infosales@td-sts.bizml.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            {/* КОЛОНКА 2: РЕЖИМ РАБОТЫ / СКЛАД (Сделано как карточки) */}
+            <div className="h-full text-gray-800">
+              <h3 className="text-2xl font-bold mb-6">Режим работы и логистика</h3>
+
+              <div className="space-y-6">
+                
+                {/* ОФИС ПРОДАЖ */}
+                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg shadow-sm">
+                  <Image
+                    src="/contacts/clock.png"
+                    alt="Иконка часов"
+                    width={64}
+                    height={64}
+                    className="w-8 h-8 flex-shrink-0 mt-1"
+                  />
+                  <div className="text-left">
+                    <p className="text-gray-700 text-base font-medium">Офис продаж (заявки и консультации):</p>
+                    <p className="text-xl font-bold">Пн – Пт: <span className="text-orange-500" >9:00 – 19:00</span></p>
+                    <p className="text-xl font-bold">Сб: <span className="text-orange-500" >9:00 – 15:00</span></p>
+                    <p className="text-xl font-bold">Вс: <span className="text-orange-500" >выходной</span></p>
+                  </div>
+                </div>
+
+                {/* ОТГРУЗКА СО СКЛАДА */}
+                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg shadow-sm">
+                  <Image
+                    src="/contacts/warehouse.png"
+                    alt="Иконка склада"
+                    width={64}
+                    height={64}
+                    className="w-8 h-8 flex-shrink-0 mt-1"
+                  />
+                  <div className="text-left">
+                    <p className="text-gray-700 text-base font-medium">Отгрузка со склада (самовывоз):</p>
+                    <p className="text-xl font-bold">Пн – Пт: <span className="text-orange-500" >9:00 – 19:00</span></p>
+                    <p className="text-xl font-bold">Сб: <span className="text-orange-500" >9:00 – 15:00</span></p>
+                    <p className="text-xl font-bold">Вс: <span className="text-orange-500" >выходной</span></p>
+                    <p className="text-orange-500 text-base italic font-semibold">Согласуйте время приезда заранее.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
