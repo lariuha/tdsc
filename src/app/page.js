@@ -485,7 +485,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
             Дополнительные возможности
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-8"> 
             {/* Блок 1: Аналитика */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-2xl font-semibold mb-3 text-orange-500">
@@ -504,10 +504,10 @@ export default function Home() {
               <h3 className="text-2xl font-semibold mb-3 text-orange-500">
                 Отдел снабжения на аутсорсе
               </h3>
-              <p className="text-gray-600  mb-4">
+              <p className="text-gray-600 mb-4">
                 Не хотите тратить ресурсы на снабженцев и закупки?
               </p>
-              <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4  mb-4">
+              <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4 mb-4">
                 <li>Поиск и проверка поставщиков.</li>
                 <li>Расчёт смет и логистики.</li>
                 <li>Оформление документов и контроль поставок.</li>
@@ -553,23 +553,23 @@ export default function Home() {
                 Зарабатывайте вместе с нами, помогая другим оптимизировать снабжение.
               </p>
             </div>
-          </div>
 
-
-          <div className="bg-white rounded-lg p-6 shadow-md mt-8">
-            <h3 className="text-2xl font-semibold mb-3 text-orange-500">
+            {/* Блок 5: Скидки в строительных гипермаркетах (РАСШИРЕННЫЙ И ЦЕНТРИРОВАННЫЙ) */}
+            <div className="bg-white rounded-lg p-6 shadow-md md:col-span-2 text-center">
+              <h3 className="text-2xl font-semibold mb-3 text-orange-500">
                 Дополнительная выгода: скидки в строительных гипермаркетах
-            </h3>
-            <p className="text-lg text-gray-600 mb-6">
-                По нашей партнёрской программе помогаем приобрести товары из &quot;Петровича&quot;, &quot;Лемана ПРО&quot;, &quot;Всеинструменты&quot;, а также из других строительных баз по <b>максимально возможной скидке</b>.
-            </p>
-            
-            <div className="flex flex-wrap items-center justify-start gap-8 mt-6">
+              </h3>
+              <p className="text-lg text-gray-600 mb-6">
+                По нашей партнёрской программе помогаем приобрести товары из &quot;Петровича&quot;, &quot;Лемана ПРО&quot;, &quot;Всеинструменты&quot;,<br/>а также из других строительных баз по <b>максимально возможной скидке</b>.
+              </p>
+              
+              <div className="flex flex-wrap items-center justify-center gap-8 mt-6">
                 <Image src="/logos/petrovich.svg" alt="Логотип Петрович" width={120} height={40} className="w-auto h-8 opacity-70 hover:opacity-100 hover:grayscale-0 transition duration-300"/>
                 <Image src="/logos/lemana_pro.svg" alt="Логотип Лемана про" width={120} height={40} className="w-auto h-8 opacity-70 hover:opacity-100 hover:grayscale-0 transition duration-300"/>
                 <Image src="/logos/vse_instrumenty.svg" alt="Логотип ВсеИнструменты" width={120} height={40} className="w-auto h-8 opacity-70 hover:opacity-100 hover:grayscale-0 transition duration-300"/>
+              </div>
             </div>
-        </div>
+          </div>
         </div>
       </section>
 
@@ -831,7 +831,7 @@ export default function Home() {
               
               <div className="space-y-6">
                 {/* ТЕЛЕФОН */}
-                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg">
+                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg shadow-sm">
                   <Image 
                     src="/contacts/telephone.png" 
                     alt="Иконка телефона" 
@@ -848,7 +848,7 @@ export default function Home() {
                 </div>
                 
                 {/* WHATSAPP */}
-                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg">
+                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg shadow-sm">
                   <Image 
                     src="/contacts/WhatsApp.png" 
                     alt="Иконка WhatsApp" 
@@ -865,7 +865,7 @@ export default function Home() {
                 </div>
                 
                 {/* EMAIL */}
-                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg">
+                <div className="flex items-start space-x-4 p-3 bg-gray-50 rounded-lg shadow-sm">
                   <Image 
                     src="/contacts/email.png" 
                     alt="Иконка Email" 
