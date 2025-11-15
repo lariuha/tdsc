@@ -222,7 +222,7 @@ export default function Home() {
                 { title: "Кирпич, блоки, ЖБИ (бетон, газобетон)", file: "kirpich_bloki.png" },
                 { title: "Пиломатериалы (доски, брус)", file: "pilomaterialy.png" },
                 { title: "Сыпучие материалы (песок, щебень, гравий)", file: "sypuchie.png" },
-                { title: "Инженерные системы", file: "inzheneriya.png" },
+                // { title: "Инженерные системы", file: "inzheneriya.png" },
             ].map((item, index) => (
                 <div 
                     key={index} 
@@ -243,7 +243,210 @@ export default function Home() {
                     </div>
                     
                     <p className="text-gray-800 font-semibold leading-snug">{item.title}</p>
-                    <span className="text-xs text-gray-500 mt-1 block">Категория материалов</span>
+                    <span className="text-xs text-gray-500 mt-1 block">Строительные материалы</span>
+                </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* 6A. САНТЕХНИКА И ИНЖЕНЕРНЫЕ СИСТЕМЫ */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-3">
+                Сантехника и инженерные системы
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Комплексные решения для воды, тепла и комфорта: от смесителей до систем фильтрации.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            {[
+                { title: "Смесители", file: "smesiteli.png" },
+                { title: "Санфаянс", file: "sanfayans.png" },
+                { title: "Инженерная сантехника", file: "inzhenernaya.png" },
+                { title: "Фитинги", file: "fitingi.png" },
+                { title: "Отопительное оборудование", file: "otoplenie.png" },
+                { title: "Сантехника для кухни", file: "kuhnya.png" },
+                { title: "Трубы", file: "truby.png" },
+                { title: "Водоснабжение и водоотведение", file: "vodosnabzhenie.png" },
+                { title: "Душевое оборудование", file: "dushevoe.png" },
+                { title: "Мебель для ванной комнаты", file: "mebel.png" },
+                { title: "Системы фильтрации", file: "filtraciya.png" },
+                { title: "Водонагреватели", file: "vodonagrevateli.png" },
+                { title: "Товары для ванной комнаты и туалета", file: "tovary_dlya_vannoi.png" },
+                { title: "Мойки для кухни", file: "moyki.png" },
+                { title: "Полотенцесушители", file: "polotencesushiteli.png" },
+                { title: "Котельное оборудование", file: "kotelnoe_oborudovanie.png" },
+                { title: "Садовая сантехника", file: "sadovaya_santehnika.png" },
+                { title: "Комплектующие и расходные материалы для сантехники", file: "komplektuyushie.png" },
+            ].map((item, index) => (
+                <div 
+                    key={index} 
+                    className="
+                        bg-gray-50 p-6 rounded-xl shadow-md text-center
+                        border-b-4 border-transparent hover:border-orange-500 
+                        transform hover:scale-[1.02] transition duration-300 ease-in-out
+                    "
+                >
+                    <div className="flex justify-center mb-3">
+                        <Image
+                            src={`/sanitary/${item.file}`}
+                            alt={item.title}
+                            width={512}
+                            height={512}
+                            className="w-36 h-36 object-contain rounded-lg"
+                        />
+                    </div>
+                    
+                    <p className="text-gray-800 font-semibold leading-snug">{item.title}</p>
+                    <span className="text-xs text-gray-500 mt-1 block">Сантехника</span>
+                </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* 6B. ЭЛЕКТРИКА И ТЕХНИКА АВТОМАТИЗАЦИИ */}
+      <section className="py-12 bg-gray-100">
+        <div className="container mx-auto px-4">
+          
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-3">
+                Электрика и техника автоматизации
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                От бытового освещения до сложного щитового оборудования и промышленной автоматики.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            {[
+                { title: "Освещение", file: "osveschenie.png" },
+                { title: "Светодиодное освещение", file: "svetodiodnoe.png" },
+                { title: "Розетки и выключатели", file: "rozetki.png" },
+                { title: "Кабель и провод", file: "kabel.png" },
+                { title: "Электромонтажная продукция", file: "elektromontazh.png" },
+                { title: "Устройства защиты, контроля и управления", file: "zaschita.png" },
+                { title: "Светильники", file: "svetilniki.png" },
+                { title: "Щитовое оборудование", file: "schitovoe.png" },
+                { title: "Лампочки", file: "lampochki.png" },
+                { title: "Аксессуары", file: "aksessuary_e.png" },
+                { title: "Сетевые удлинители", file: "udliniteli.png" },
+                { title: "Кабель-менеджмент", file: "kabel_menedzhment.png" },
+                { title: "Электроника и электротовары", file: "elektronika.png" },
+                { title: "Системы безопасности", file: "bezopasnost.png" },
+                { title: "Преобразователи напряжения", file: "preobrazovateli.png" },
+                { title: "Датчики", file: "datchiki.png" },
+                { title: "Разветвители и адаптеры", file: "razvetviteli.png" },
+                { title: "Коммутационное оборудование", file: "kommutacionnoe.png" },
+                { title: "Кабеленесущие системы", file: "kabelenesuschie.png" },
+                { title: "Источники бесперебойного питания", file: "ibp.png" },
+                { title: "Устройства электропитания", file: "elektropitanie.png" },
+                { title: "Комплектующие для ПК", file: "komplektuyuschie_pk.png" },
+                { title: "Паяльное оборудование", file: "pajalnoe.png" },
+                { title: "Компоненты СКС", file: "sks.png" },
+                { title: "Счётчики и приборы учёта", file: "schetchiki.png" },
+                { title: "Приводная техника", file: "privodnaya.png" },
+                { title: "Техника автоматизации", file: "avtomatizaciya.png" },
+                { title: "Электротехническая продукция", file: "elektrotehnicheskaya.png" },
+                { title: "Промышленная блокировка", file: "prom_blokirovka.png" },
+                { title: "Молниезащита и заземление", file: "molniezaschita.png" },
+                { title: "Устройства промышленной безопасности", file: "prom_bezopasnost.png" },
+                { title: "Звуковое оборудование", file: "zvukovoe.png" },
+            ].map((item, index) => (
+                <div 
+                    key={index} 
+                    className="
+                        bg-white p-6 rounded-xl shadow-md text-center
+                        border-b-4 border-transparent hover:border-orange-500 
+                        transform hover:scale-[1.02] transition duration-300 ease-in-out
+                    "
+                >
+                    <div className="flex justify-center mb-3">
+                        <Image
+                            src={`/electrical/${item.file}`}
+                            alt={item.title}
+                            width={512}
+                            height={512}
+                            className="w-36 h-36 object-contain rounded-lg"
+                        />
+                    </div>
+                    
+                    <p className="text-gray-800 font-semibold leading-snug">{item.title}</p>
+                    <span className="text-xs text-gray-500 mt-1 block">Электрика</span>
+                </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* 6C. СТРОИТЕЛЬНЫЕ И ОТДЕЛОЧНЫЕ МАТЕРИАЛЫ */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-3">
+                Строительные и отделочные материалы
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Полный каталог для всех этапов строительства и ремонта — от фундамента до финишной отделки.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            {[
+                { title: "Отделочные материалы", file: "otdelochnye.png" },
+                { title: "Пиломатериалы", file: "pilomaterialy_s.png" },
+                { title: "Древесно-плитные материалы", file: "plitnye.png" },
+                { title: "Строительные смеси", file: "smesi.png" },
+                { title: "Изоляционные материалы", file: "izolyaciya.png" },
+                { title: "Лакокрасочные материалы", file: "lakokrasochnye.png" },
+                { title: "Прочие строительные материалы", file: "prochie_s.png" },
+                { title: "Заборы и ограждения", file: "zabori.png" },
+                { title: "Кровельные материалы", file: "krovelnye_s.png" },
+                { title: "Строительные расходные материалы", file: "rashodnye.png" },
+                { title: "Строительная химия", file: "himiya.png" },
+                { title: "Дорожные покрытия", file: "dorozhnye.png" },
+                { title: "Всё для ремонта", file: "remont.png" },
+                { title: "Всё для фундамента", file: "fundament.png" },
+                { title: "Металлопрокат", file: "metalloprokat_s.png" },
+                { title: "Обои", file: "oboi.png" },
+                { title: "Клеи", file: "klei.png" },
+                { title: "Межэтажные лестницы", file: "lestnicy.png" },
+                { title: "Для черновой отделки", file: "chernovaya.png" },
+                { title: "Сайдинг и фасадные панели", file: "sayding.png" },
+                { title: "Вентиляционные коробочки", file: "ventilyaciya.png" },
+                { title: "Цемент и нерудные материалы", file: "cement.png" },
+                { title: "Для отвода воды", file: "otvod_vody.png" },
+                { title: "Производственные материалы", file: "proizvodstvennye.png" },
+            ].map((item, index) => (
+                <div 
+                    key={index} 
+                    className="
+                        bg-white p-6 rounded-xl shadow-md text-center
+                        border-b-4 border-transparent hover:border-orange-500 
+                        transform hover:scale-[1.02] transition duration-300 ease-in-out
+                    "
+                >
+                    <div className="flex justify-center mb-3">
+                        <Image
+                            src={`/building/${item.file}`}
+                            alt={item.title}
+                            width={512}
+                            height={512}
+                            className="w-36 h-36 object-contain rounded-lg"
+                        />
+                    </div>
+                    
+                    <p className="text-gray-800 font-semibold leading-snug">{item.title}</p>
+                    <span className="text-xs text-gray-500 mt-1 block">Стройматериалы</span>
                 </div>
             ))}
           </div>
@@ -351,6 +554,22 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+
+          <div className="bg-white rounded-lg p-6 shadow-md mt-8">
+            <h3 className="text-2xl font-semibold mb-3 text-orange-500">
+                Дополнительная выгода: скидки в строительных гипермаркетах
+            </h3>
+            <p className="text-lg text-gray-600 mb-6">
+                По нашей партнёрской программе помогаем приобрести товары из "Петровича", "Лемана ПРО", "Всеинструменты", а также из других строительных баз по <b>максимально возможной скидке</b>.
+            </p>
+            
+            <div className="flex flex-wrap items-center justify-start gap-8 mt-6">
+                <Image src="/logos/petrovich.svg" alt="Логотип Петрович" width={120} height={40} className="w-auto h-8 opacity-70 hover:opacity-100 hover:grayscale-0 transition duration-300"/>
+                <Image src="/logos/lemana_pro.svg" alt="Логотип Лемана про" width={120} height={40} className="w-auto h-8 opacity-70 hover:opacity-100 hover:grayscale-0 transition duration-300"/>
+                <Image src="/logos/vse_instrumenty.svg" alt="Логотип ВсеИнструменты" width={120} height={40} className="w-auto h-8 opacity-70 hover:opacity-100 hover:grayscale-0 transition duration-300"/>
+            </div>
+        </div>
         </div>
       </section>
 
